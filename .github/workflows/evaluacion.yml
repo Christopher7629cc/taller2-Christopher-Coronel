@@ -1,0 +1,51 @@
+/**
+ * Perfil de estudiante de la Universidad Tecnológica de Panamá.
+ *
+ * @author Christopher Coronel/Isaaid Caicedo - 8-1056-1787/8-1065-109
+ * @version 1.0
+ */
+public class PerfilEstudianteUTP {
+
+    public static void main(String[] args) {
+
+        // ==============================================================
+        // NIVEL 1: IDENTIFICADORES Y TIPOS DE DATOS PRIMITIVOS
+        // ==============================================================
+
+        String primerNombre = "Carlos Pérez";
+
+        int creditosMatriculados = 18;
+
+        double costoCredito = 15.50;
+
+        boolean estaPazYSalvo = true;
+
+        char inicialSegundoNombre = 'M';
+
+
+        // ==============================================================
+        // NIVEL 2: CONSTANTES (final) E INMUTABILIDAD
+        // ==============================================================
+
+        final double CARNET_ESTUDIANTIL = 5.00;
+
+
+        // ==============================================================
+        // NIVEL 3: CÁLCULO ARITMÉTICO Y SALIDA FORMATO COMPROBANTE
+        // ==============================================================
+
+        double subtotalMatricula = creditosMatriculados * costoCredito;
+
+        double totalPagar = subtotalMatricula + CARNET_ESTUDIANTIL;
+
+
+        System.out.println("==========================================");
+        System.out.println(" FICHA DE MATRÍCULA ESTUDIANTIL UTP");
+        System.out.println("==========================================");
+        System.out.println("Estudiante : " + primerNombre);
+        System.out.println("Paz y Salvo: " + estaPazYSalvo);
+        System.out.println("Subtotal : $" + subtotalMatricula);
+        System.out.println("Total : $" + totalPagar);
+        System.out.println("==========================================");
+    }
+}
